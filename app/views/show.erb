@@ -1,0 +1,13 @@
+<div class="container-fluid text-center">
+	<div id="title-container">
+		<h1>Anagrams for "<%= "#{@word}" %>"</h1>
+	</div>
+</div>
+
+<div class="container-fluid text-center">
+		<table class="table table-striped">
+				<% @anagrams.each do |anagram| %>
+					<tr><td><%= "#{anagram}" %></td></tr>
+				<% end %>
+		</table>
+</div>

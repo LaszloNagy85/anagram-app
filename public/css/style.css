@@ -1,0 +1,21 @@
+.btn {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+}
+
+#title-container {
+    background: #E9967A;
+    color: #FFF;
+    padding: 20px;
+}
+
+#intro-container {
+	padding: 20px;
+	background: #FFFFFF;
+}
+
+#page-content {
+	background: #FFFFFF;
+}
+
