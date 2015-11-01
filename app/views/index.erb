@@ -6,6 +6,9 @@
 
 <div class="container text-center">
 	<div id="intro-container">
+	<% if @error %>
+		<div class="alert alert-danger"><p><%= "#{@error}" %></p></div>
+	<% end %>
 		<form action="/" method="post" class="form">
 			<div class="form-group">
 				<label for="word">Enter a three-letter word: </label>
