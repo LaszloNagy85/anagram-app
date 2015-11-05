@@ -1,6 +1,6 @@
 <div class="container-fluid text-center">
 	<div id="title-container">
-		<h1>Words</h1>
+		<h1><%= "#{@word.text.capitalize}" %></h1>
 	</div>
 </div>
 
@@ -11,12 +11,10 @@
 				<div class="container-fluid text-center"><th>Letters</th></div>
 			</thead>
 			<tbody>
-				<% @words.each do |word| %>
 					<tr>
-						<td><a href="<%= "/words/#{word.id}" %>"><%= word.text %></a></td>
-						<td><%= word.letters %></td>
+						<td><%= @word.text %></td>
+						<td><%= @word.letters %></td>
 					</tr>
-				<% end %>
 			</tbody>
 		</table>
 </div>
