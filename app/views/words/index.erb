@@ -1,0 +1,22 @@
+<div class="container-fluid text-center">
+	<div id="title-container">
+		<h1>Words</h1>
+	</div>
+</div>
+
+<div class="container-fluid text-center">
+		<table class="table table-striped">
+			<thead>
+				<div class="container-fluid text-center"><th>Text</th></div>
+				<div class="container-fluid text-center"><th>Letters</th></div>
+			</thead>
+			<tbody>
+				<% @words.each do |word| %>
+					<tr>
+						<td><%= word.text %></td>
+						<td><%= word.letters %></td>
+					</tr>
+				<% end %>
+			</tbody>
+		</table>
+</div>
