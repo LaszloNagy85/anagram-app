@@ -4,9 +4,7 @@ end
 
 get '/anagrams/:word' do
 	@word = params[:word]
-	word_array = @word.chars.sort
-	@alphabetized_string = word_array.join
-	@anagrams = Word.where("letters=?", @alphabetized_string)
+	@anagrams = Word.find_anagrams(@word)
 	erb :show
 end
 
@@ -38,7 +36,7 @@ end
 def valid_input?(input)
 	if three_letters?(input) && distinct_letters?(input)
 		true
-	elsif three_letters?(input)
-	elsif distinct_letters?(input)
+	else
+		raise Exception.new("There was an error.")
 	end
 end
