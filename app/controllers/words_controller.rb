@@ -15,7 +15,7 @@ get '/words/:id' do
 end
 
 post '/words' do
-	@word = Word.create(text: params[:text])
+	@word = Word.create(text: params[:text].downcase)
 	redirect "/words/#{@word.id}"
 end
 
@@ -28,7 +28,7 @@ end
 put '/words/:id' do
 	@word = Word.find(params[:id])
 	@word.id = params[:id]
-	@word.text = params[:text]
+	@word.text = params[:text].downcase
 	@word.save
 	erb :"/words/show"
 end
