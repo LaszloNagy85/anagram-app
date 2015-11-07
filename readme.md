@@ -1,6 +1,6 @@
 ##About the developer
 
-About the developer: Emily Chapman lives in Atlanta, GA. You can read her [blog](http://www.emchap.com), find her on [Twitter](http://www.twitter.com/eachapm), or shoot her a line at emily [at] emchap [dot] com.
+Emily Chapman lives in Atlanta, GA. You can read her [blog](http://www.emchap.com), find her on [Twitter](http://www.twitter.com/eachapm), or shoot her a line at emily [at] emchap [dot] com.
 
 ##About the app
 
